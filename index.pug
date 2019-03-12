@@ -1,0 +1,13 @@
+canvas
+menu
+  form(onsubmit='init(event)')
+    input(
+      type='text'
+      id='textInput'
+      maxLength='90'
+      placeholder='Random text'
+    )
+    button Run
+    br
+    button.active(type='button' onClick='setSpeed(event, 40)') Fast
+    button(type='button' onClick='setSpeed(event, 15)') Slow
